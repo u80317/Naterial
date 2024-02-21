@@ -9,70 +9,58 @@
         MinWidth="320"
         MinHeight="320">
 
-    <WrapPanel Margin="8">
-        <WrapPanel.Resources>
-            <Style TargetType="Label">
-                <Setter Property="Width" Value="240" />
-                <Setter Property="Height" Value="56" />
-                <Setter Property="Padding" Value="8" />
-            </Style>
-        </WrapPanel.Resources>
-
-        <StackPanel Margin="0 0 8 8">
-            <Label Content="Primary"
-                   Background="{DynamicResource Brush.Primary}"
-                   Foreground="{DynamicResource Brush.OnPrimary}" />
-            <Label Content="On Primary"
-                   Background="{DynamicResource Brush.OnPrimary}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-        </StackPanel>
-
-        <StackPanel Margin="0 0 8 8">
-            <Label Content="Surface"
-                   Background="{DynamicResource Brush.Surface}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-            <Label Content="Surface Container"
-                   Background="{DynamicResource Brush.Surface.Container}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-            <Label Content="On Surface"
-                   Background="{DynamicResource Brush.OnSurface}"
-                   Foreground="{DynamicResource Brush.OnPrimary}"
+    <StackPanel Margin="8">
+        <TextBlock Text="H1/Segoe UI/Light/82px"
+                   FontSize="{StaticResource FontSize.Headline1}"
+                   FontWeight="Light"
+                   Margin="0 -8" />
+        <TextBlock Text="H2/Segoe UI/Light/50px"
+                   FontSize="{StaticResource FontSize.Headline2}"
+                   FontWeight="Light" />
+        <TextBlock Text="H3/Segoe UI/Regular/40px"
+                   FontSize="{StaticResource FontSize.Headline3}"
+                   FontWeight="Regular"
+                   Margin="0 8 0 0"/>
+        <TextBlock Text="H4/Segoe UI/Regular/28px"
+                   FontSize="{StaticResource FontSize.Headline4}"
+                   FontWeight="Regular"
                    Margin="0 8 0 0" />
-            <Label Content="On Surface Variant"
-                   Background="{DynamicResource Brush.OnSurface.Variant}"
-                   Foreground="{DynamicResource Brush.OnPrimary}" />
-        </StackPanel>
-
-        <StackPanel Margin="0 0 8 8">
-            <Label Content="Error"
-                   Background="{DynamicResource Brush.Error}"
-                   Foreground="{DynamicResource Brush.OnError}" />
-            <Label Content="On Error"
-                   Background="{DynamicResource Brush.OnError}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-        </StackPanel>
-
-        <StackPanel Margin="0 0 8 8">
-            <Label Content="Outline"
-                   Background="{DynamicResource Brush.Outline}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-            <Label Content="Outline Variant"
-                   Background="{DynamicResource Brush.Outline.Variant}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-        </StackPanel>
-
-        <StackPanel Margin="0 0 8 8">
-            <Label Content="Inverse Surface"
-                   Background="{DynamicResource Brush.Inverse.Surface}"
-                   Foreground="{DynamicResource Brush.Inverse.OnSurface}" />
-            <Label Content="Inverse On Surface"
-                   Background="{DynamicResource Brush.Inverse.OnSurface}"
-                   Foreground="{DynamicResource Brush.OnSurface}" />
-            <Label Content="Inverse Primary"
-                   Background="{DynamicResource Brush.Inverse.Primary}"
-                   Foreground="{DynamicResource Brush.OnSurface}"
+        <TextBlock Text="H5/Segoe UI/Regular/20px"
+                   FontSize="{StaticResource FontSize.Headline5}"
+                   FontWeight="Regular"
                    Margin="0 8 0 0" />
-        </StackPanel>
-    </WrapPanel>
+        <TextBlock Text="H6/Segoe UI/Medium/16px"
+                   FontSize="{StaticResource FontSize.Headline6}"
+                   FontWeight="Medium"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Subtitle 1/Segoe UI/Regular/14px"
+                   FontSize="{StaticResource FontSize.Subtitle1}"
+                   FontWeight="Regular"
+                   Margin="0 16 0 0" />
+        <TextBlock Text="Subtitle 2/Segoe UI/Medium/12px"
+                   FontSize="{StaticResource FontSize.Subtitle2}"
+                   FontWeight="Medium"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Body 1/Segoe UI/Regular/14px"
+                   FontSize="{StaticResource FontSize.Body1}"
+                   FontWeight="Regular"
+                   Margin="0 16 0 0" />
+        <TextBlock Text="Body 2/Segoe UI/Regular/12px"
+                   FontSize="{StaticResource FontSize.Body2}"
+                   FontWeight="Regular"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="BUTTON/SEGOE UI/MEDIUM/12PX"
+                   FontSize="{StaticResource FontSize.Button}"
+                   FontWeight="Medium"
+                   Margin="0 16 0 0" />
+        <TextBlock Text="Caption/Segoe UI/Regular/10px"
+                   FontSize="{StaticResource FontSize.Caption}"
+                   FontWeight="Regular"
+                   Margin="0 16 0 0" />
+        <TextBlock Text="OVERLINE/SEGOE UI/REGULAR/10PX"
+                   FontSize="{StaticResource FontSize.Overline}"
+                   FontWeight="Regular"
+                   Margin="0 8 0 0" />
+    </StackPanel>
 
 </Window>
