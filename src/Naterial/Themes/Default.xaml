@@ -3,6 +3,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Naterial;component/Themes/Fonts.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Naterial;component/Themes/Shapes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

@@ -9,4 +9,6 @@ using System.Windows.Markup;
 
 [assembly: XmlnsPrefix("http://schemas.naterial.com/winfx/xaml", "nd")]
 
+[assembly: XmlnsDefinition("http://schemas.naterial.com/winfx/xaml", "Naterial.Controls")]
+
 [assembly: ComVisible(false)]
