@@ -12,60 +12,57 @@
         MinWidth="320"
         MinHeight="320">
 
-    <StackPanel HorizontalAlignment="Center"
-                VerticalAlignment="Center">
+    <WrapPanel ItemWidth="160"
+               ItemHeight="160"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Margin="8">
         <Border Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48" />
-
-        <Separator Background="{DynamicResource Brush.Outline.Variant}"
-                   Margin="0 16" />
-
-        <Border CornerRadius="{StaticResource CornerRadius.ExtraSmall}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48" />
-        <Border CornerRadius="{StaticResource CornerRadius.Small}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0" />
-        <Border CornerRadius="{StaticResource CornerRadius.Small.Top}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0" />
-        <Border CornerRadius="{StaticResource CornerRadius.Medium}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0" />
-        <Border CornerRadius="{StaticResource CornerRadius.Large}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0" />
-        <Border CornerRadius="{StaticResource CornerRadius.ExtraLarge}"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0" />
-
-        <Separator Background="{DynamicResource Brush.Outline.Variant}"
-                   Margin="0 16" />
-
-        <Border nd:ShapeAssist.CornerRadius="24"
-                Background="{DynamicResource Brush.Primary}"
-                Width="240"
-                Height="48"
-                Margin="0 8 0 0">
-            <Border.Style>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius"
-                            Value="{Binding Path=(nd:ShapeAssist.CornerRadius), RelativeSource={RelativeSource Self}}" />
-                </Style>
-            </Border.Style>
+                Margin="0 0 16 16">
+            <Border.CornerRadius>
+                <MultiBinding Converter="{x:Static nd:ShapeCircularConverter.Default}">
+                    <Binding Path="ActualWidth"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="ActualHeight"
+                             RelativeSource="{RelativeSource Self}" />
+                </MultiBinding>
+            </Border.CornerRadius>
         </Border>
-    </StackPanel>
+        <Border Background="{DynamicResource Brush.Primary}"
+                CornerRadius="8"
+                Margin="0 0 8 8">
+            <Border.Clip>
+                <MultiBinding Converter="{x:Static nd:ShapeClipConverter.Default}">
+                    <Binding Path="ActualWidth"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="ActualHeight"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="CornerRadius"
+                             RelativeSource="{RelativeSource Self}" />
+                </MultiBinding>
+            </Border.Clip>
+        </Border>
+        <Border Background="{DynamicResource Brush.Primary}"
+                Margin="0 0 8 8">
+            <Border.CornerRadius>
+                <MultiBinding Converter="{x:Static nd:ShapeCircularConverter.Default}">
+                    <Binding Path="ActualWidth"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="ActualHeight"
+                             RelativeSource="{RelativeSource Self}" />
+                </MultiBinding>
+            </Border.CornerRadius>
+            <Border.Clip>
+                <MultiBinding Converter="{x:Static nd:ShapeClipConverter.Default}">
+                    <Binding Path="ActualWidth"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="ActualHeight"
+                             RelativeSource="{RelativeSource Self}" />
+                    <Binding Path="CornerRadius"
+                             RelativeSource="{RelativeSource Self}" />
+                </MultiBinding>
+            </Border.Clip>
+        </Border>
+    </WrapPanel>
 
 </Window>
