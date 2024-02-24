@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:o="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+    <DropShadowEffect x:Key="DropShadow.Level1"
+                      BlurRadius="4"
+                      ShadowDepth=".75"
+                      Direction="270"
+                      Opacity=".45"
+                      o:Freeze="True" />
+
+    <DropShadowEffect x:Key="DropShadow.Level2"
+                      BlurRadius="5"
+                      ShadowDepth="1.25"
+                      Direction="270"
+                      Opacity=".45"
+                      o:Freeze="True" />
+
+    <DropShadowEffect x:Key="DropShadow.Level3"
+                      BlurRadius="7"
+                      ShadowDepth="1.75"
+                      Direction="270"
+                      Opacity=".45"
+                      o:Freeze="True" />
+
+    <DropShadowEffect x:Key="DropShadow.Level4"
+                      BlurRadius="8"
+                      ShadowDepth="2.25"
+                      Direction="270"
+                      Opacity=".45"
+                      o:Freeze="True" />
+
+    <DropShadowEffect x:Key="DropShadow.Level5"
+                      BlurRadius="10"
+                      ShadowDepth="3.25"
+                      Direction="270"
+                      Opacity=".45"
+                      o:Freeze="True" />
+
+    <DropShadowEffect x:Key="DropShadow.Level6"
+                      BlurRadius="14"
+                      ShadowDepth="4"
+                      Direction="270"
+                      Opacity=".5"
+                      o:Freeze="True" />
+
+</ResourceDictionary>

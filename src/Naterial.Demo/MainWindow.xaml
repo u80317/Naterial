@@ -17,51 +17,59 @@
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
                Margin="8">
-        <Border Background="{DynamicResource Brush.Primary}"
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level1"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
                 Margin="0 0 16 16">
-            <Border.CornerRadius>
-                <MultiBinding Converter="{x:Static nd:ShapeCircularConverter.Default}">
-                    <Binding Path="ActualWidth"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="ActualHeight"
-                             RelativeSource="{RelativeSource Self}" />
-                </MultiBinding>
-            </Border.CornerRadius>
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level1"
+                    CornerRadius="4" />
         </Border>
-        <Border Background="{DynamicResource Brush.Primary}"
-                CornerRadius="8"
-                Margin="0 0 8 8">
-            <Border.Clip>
-                <MultiBinding Converter="{x:Static nd:ShapeClipConverter.Default}">
-                    <Binding Path="ActualWidth"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="ActualHeight"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="CornerRadius"
-                             RelativeSource="{RelativeSource Self}" />
-                </MultiBinding>
-            </Border.Clip>
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level2"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Margin="0 0 16 16">
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level2"
+                    CornerRadius="4" />
         </Border>
-        <Border Background="{DynamicResource Brush.Primary}"
-                Margin="0 0 8 8">
-            <Border.CornerRadius>
-                <MultiBinding Converter="{x:Static nd:ShapeCircularConverter.Default}">
-                    <Binding Path="ActualWidth"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="ActualHeight"
-                             RelativeSource="{RelativeSource Self}" />
-                </MultiBinding>
-            </Border.CornerRadius>
-            <Border.Clip>
-                <MultiBinding Converter="{x:Static nd:ShapeClipConverter.Default}">
-                    <Binding Path="ActualWidth"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="ActualHeight"
-                             RelativeSource="{RelativeSource Self}" />
-                    <Binding Path="CornerRadius"
-                             RelativeSource="{RelativeSource Self}" />
-                </MultiBinding>
-            </Border.Clip>
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level3"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Margin="0 0 16 16">
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level3"
+                    CornerRadius="4" />
+        </Border>
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level4"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Margin="0 0 16 16">
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level4"
+                    CornerRadius="4" />
+        </Border>
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level5"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Margin="0 0 16 16">
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level5"
+                    CornerRadius="4" />
+        </Border>
+        <Border Style="{StaticResource Style.BorderESL}"
+                nd:ElevationAssist.Level="Level6"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Margin="0 0 16 16">
+            <Border Style="{StaticResource Style.BorderEOL}"
+                    nd:ElevationAssist.Level="Level6"
+                    CornerRadius="4" />
         </Border>
     </WrapPanel>
 
