@@ -12,65 +12,45 @@
         MinWidth="320"
         MinHeight="320">
 
-    <WrapPanel ItemWidth="160"
-               ItemHeight="160"
+    <WrapPanel UseLayoutRounding="True"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
                Margin="8">
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level1"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level1"
-                    CornerRadius="4" />
-        </Border>
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level2"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level2"
-                    CornerRadius="4" />
-        </Border>
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level3"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level3"
-                    CornerRadius="4" />
-        </Border>
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level4"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level4"
-                    CornerRadius="4" />
-        </Border>
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level5"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level5"
-                    CornerRadius="4" />
-        </Border>
-        <Border Style="{StaticResource Style.BorderESL}"
-                nd:ElevationAssist.Level="Level6"
-                Background="{DynamicResource Brush.Surface}"
-                CornerRadius="4"
-                Margin="0 0 16 16">
-            <Border Style="{StaticResource Style.BorderEOL}"
-                    nd:ElevationAssist.Level="Level6"
-                    CornerRadius="4" />
-        </Border>
+        <WrapPanel.Resources>
+            <Style TargetType="Border"
+                   BasedOn="{StaticResource Style.BorderSOL}">
+                <Setter Property="Width"
+                        Value="240" />
+                <Setter Property="Height"
+                        Value="56" />
+                <Setter Property="Margin"
+                        Value="0 0 0 8" />
+            </Style>
+        </WrapPanel.Resources>
+        <StackPanel Background="{DynamicResource Brush.Surface.Container}"
+                    Margin="0 0 8 8">
+            <Border Background="{DynamicResource Brush.OnSurface}"
+                    nd:StateAssist.IsMouseOver="True"
+                    Margin="8" />
+            <Border Background="{DynamicResource Brush.OnSurface}"
+                    nd:StateAssist.IsFocused="True" />
+            <Border Background="{DynamicResource Brush.OnSurface}"
+                    nd:StateAssist.IsSelected="True" />
+            <Border Background="{DynamicResource Brush.OnSurface}"
+                    nd:StateAssist.IsPressed="True" />
+        </StackPanel>
+        <StackPanel Background="{DynamicResource Brush.Primary}"
+                    Margin="0 0 8 8">
+            <Border Background="{DynamicResource Brush.OnPrimary}"
+                    nd:StateAssist.IsMouseOver="True"
+                    Margin="8" />
+            <Border Background="{DynamicResource Brush.OnPrimary}"
+                    nd:StateAssist.IsFocused="True" />
+            <Border Background="{DynamicResource Brush.OnPrimary}"
+                    nd:StateAssist.IsSelected="True" />
+            <Border Background="{DynamicResource Brush.OnPrimary}"
+                    nd:StateAssist.IsPressed="True" />
+        </StackPanel>
     </WrapPanel>
 
 </Window>

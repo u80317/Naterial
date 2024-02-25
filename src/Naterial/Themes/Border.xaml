@@ -84,4 +84,36 @@
     </Style>
     <!--#endregion-->
 
+    <!--#region Style: BorderSOL -->
+    <Style x:Key="Style.BorderSOL"
+           TargetType="Border">
+        <Setter Property="Background"
+                Value="{DynamicResource Brush.OnSurface}" />
+        <Setter Property="Opacity"
+                Value=".0" />
+        <Style.Triggers>
+            <Trigger Property="ctrl:StateAssist.IsMouseOver"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".08" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsFocused"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".12" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsSelected"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".16" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsPressed"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".20" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!---->
+
 </ResourceDictionary>
