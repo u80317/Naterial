@@ -1,0 +1,119 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ctrl="clr-namespace:Naterial.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Naterial;component/Themes/Shadows.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--#region Style: BorderESL -->
+    <Style x:Key="Style.BorderESL"
+           TargetType="Border">
+        <Style.Triggers>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level1">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level1}" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level2">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level2}" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level3">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level3}" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level4">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level4}" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level5">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level5}" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level6">
+                <Setter Property="Effect"
+                        Value="{StaticResource DropShadow.Level6}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Style: BorderEOL -->
+    <Style x:Key="Style.BorderEOL"
+           TargetType="Border">
+        <Setter Property="Background"
+                Value="#FFF" />
+        <Style.Triggers>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level1">
+                <Setter Property="Opacity"
+                        Value=".05" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level2">
+                <Setter Property="Opacity"
+                        Value=".07" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level3">
+                <Setter Property="Opacity"
+                        Value=".09" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level4">
+                <Setter Property="Opacity"
+                        Value=".11" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level5">
+                <Setter Property="Opacity"
+                        Value=".12" />
+            </Trigger>
+            <Trigger Property="ctrl:ElevationAssist.Level"
+                     Value="Level6">
+                <Setter Property="Opacity"
+                        Value=".14" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Style: BorderSOL -->
+    <Style x:Key="Style.BorderSOL"
+           TargetType="Border">
+        <Setter Property="Background"
+                Value="{DynamicResource Brush.OnSurface}" />
+        <Setter Property="Opacity"
+                Value=".0" />
+        <Style.Triggers>
+            <Trigger Property="ctrl:StateAssist.IsMouseOver"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".08" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsFocused"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".12" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsSelected"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".16" />
+            </Trigger>
+            <Trigger Property="ctrl:StateAssist.IsPressed"
+                     Value="True">
+                <Setter Property="Opacity"
+                        Value=".20" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!---->
+
+</ResourceDictionary>

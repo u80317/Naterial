@@ -1,0 +1,95 @@
+﻿<Window x:Class="Naterial.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:nd="http://schemas.naterial.com/winfx/xaml"
+        Title="Naterial.Demo"
+        FontFamily="{StaticResource FontFamily.Default}"
+        FontSize="{StaticResource FontSize.Body2}"
+        Background="{DynamicResource Brush.Surface}"
+        Foreground="{DynamicResource Brush.OnSurface}"
+        Width="1280"
+        Height="720"
+        MinWidth="320"
+        MinHeight="320">
+
+    <WrapPanel Margin="8">
+        <WrapPanel.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Width" Value="240" />
+                <Setter Property="Height" Value="56" />
+                <Setter Property="Padding" Value="8" />
+            </Style>
+        </WrapPanel.Resources>
+
+        <StackPanel Margin="0 0 8 8">
+            <Label Content="Primary"
+                   Background="{DynamicResource Brush.Primary}"
+                   Foreground="{DynamicResource Brush.OnPrimary}" />
+            <Label Content="On Primary"
+                   Background="{DynamicResource Brush.OnPrimary}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+        </StackPanel>
+
+        <StackPanel Margin="0 0 8 8">
+            <Label Content="Surface"
+                   Background="{DynamicResource Brush.Surface}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+            <Label Content="Surface Container"
+                   Background="{DynamicResource Brush.Surface.Container}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+            <Label Content="On Surface"
+                   Background="{DynamicResource Brush.OnSurface}"
+                   Foreground="{DynamicResource Brush.OnPrimary}"
+                   Margin="0 8 0 0" />
+            <Label Content="On Surface Variant"
+                   Background="{DynamicResource Brush.OnSurface.Variant}"
+                   Foreground="{DynamicResource Brush.OnPrimary}" />
+        </StackPanel>
+
+        <StackPanel Margin="0 0 8 8">
+            <Label Content="Error"
+                   Background="{DynamicResource Brush.Error}"
+                   Foreground="{DynamicResource Brush.OnError}" />
+            <Label Content="On Error"
+                   Background="{DynamicResource Brush.OnError}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+        </StackPanel>
+
+        <StackPanel Margin="0 0 8 8">
+            <Label Content="Outline"
+                   Background="{DynamicResource Brush.Outline}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+            <Label Content="Outline Variant"
+                   Background="{DynamicResource Brush.Outline.Variant}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+        </StackPanel>
+
+        <StackPanel Margin="0 0 8 8">
+            <Label Content="Inverse Surface"
+                   Background="{DynamicResource Brush.Inverse.Surface}"
+                   Foreground="{DynamicResource Brush.Inverse.OnSurface}" />
+            <Label Content="Inverse On Surface"
+                   Background="{DynamicResource Brush.Inverse.OnSurface}"
+                   Foreground="{DynamicResource Brush.OnSurface}" />
+            <Label Content="Inverse Primary"
+                   Background="{DynamicResource Brush.Inverse.Primary}"
+                   Foreground="{DynamicResource Brush.OnSurface}"
+                   Margin="0 8 0 0" />
+        </StackPanel>
+
+        <Border Background="{DynamicResource Brush.Surface.Container}"
+                BorderBrush="{DynamicResource Brush.Outline}"
+                BorderThickness="1 0 0 0"
+                Width="240"
+                VerticalAlignment="Top"
+                Padding="12 8"
+                Margin="0 0 8 8">
+            <CheckBox Content="_Enable dark mode"
+                      Click="SwitchTheme_OnClick"
+                      Focusable="False"
+                      Foreground="{DynamicResource Brush.OnSurface}"
+                      BorderBrush="{DynamicResource Brush.Outline}" />
+        </Border>
+    </WrapPanel>
+
+</Window>

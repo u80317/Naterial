@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:o="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+    <SolidColorBrush x:Key="Brush.Primary" Color="#1A73E8" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.OnPrimary" Color="#FFF" o:Freeze="True" />
+
+    <SolidColorBrush x:Key="Brush.Surface" Color="#FDFDFD" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.Surface.Container" Color="#EFEFEF" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.OnSurface" Color="#1F1F1F" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.OnSurface.Variant" Color="#474747" o:Freeze="True" />
+
+    <SolidColorBrush x:Key="Brush.Error" Color="#B00020" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.OnError" Color="#FFF" o:Freeze="True" />
+
+    <SolidColorBrush x:Key="Brush.Outline" Color="#797979" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.Outline.Variant" Color="#CECECE" o:Freeze="True" />
+
+    <SolidColorBrush x:Key="Brush.Inverse.Surface" Color="#323232" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.Inverse.OnSurface" Color="#E6E6E6" o:Freeze="True" />
+    <SolidColorBrush x:Key="Brush.Inverse.Primary" Color="#70B1FF" o:Freeze="True" />
+
+</ResourceDictionary>

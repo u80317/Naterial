@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <FontFamily x:Key="FontFamily.Default">Segoe UI</FontFamily>
+
+    <system:Double x:Key="FontSize.Headline1">82</system:Double>
+    <system:Double x:Key="FontSize.Headline2">50</system:Double>
+    <system:Double x:Key="FontSize.Headline3">40</system:Double>
+    <system:Double x:Key="FontSize.Headline4">28</system:Double>
+    <system:Double x:Key="FontSize.Headline5">20</system:Double>
+    <system:Double x:Key="FontSize.Headline6">16</system:Double>
+    <system:Double x:Key="FontSize.Subtitle1">14</system:Double>
+    <system:Double x:Key="FontSize.Subtitle2">12</system:Double>
+    <system:Double x:Key="FontSize.Body1">14</system:Double>
+    <system:Double x:Key="FontSize.Body2">12</system:Double>
+    <system:Double x:Key="FontSize.Button">12</system:Double>
+    <system:Double x:Key="FontSize.Caption">10</system:Double>
+    <system:Double x:Key="FontSize.Overline">10</system:Double>
+
+</ResourceDictionary>
